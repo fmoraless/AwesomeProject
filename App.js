@@ -1,14 +1,19 @@
+import 'react-native-gesture-handler';
 import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
 import Saludar from "./src/components/Saludar"
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Curso React Native</Text>
-      {/* <Saludar /> */}
-      <Saludar firstname="Francisco" lastname={28} />
-      <Saludar firstname="Carlos" lastname="Navarro" />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Curso React Native</Text>
+        {/* <Saludar /> */}
+        <Saludar firstname="Francisco" lastname="Morales" />
+        <Saludar firstname="Carlos" lastname="Navarro" />
+      </View>
+    </NavigationContainer>
   );
 }
 
